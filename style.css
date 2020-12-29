@@ -1,0 +1,14 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background-color: #0c122c;
+  color: #ffffff;
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 100vh;
+}
