@@ -1,6 +1,13 @@
 html {
   font-size: 10px;
   font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -14,14 +21,16 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 .attribution {
-  background-color: yellow;
+  background-color: rebeccapurple;
   text-align: center;
 }
 
+.attribution a {
+  color: white;
+}
 .main {
   margin: auto;
   display: flex;
@@ -89,6 +98,7 @@ body {
   padding-left: 4rem;
   margin-top: auto;
   margin-left: 3rem;
+  position: relative;
 }
 
 .usage-text {
@@ -152,4 +162,48 @@ body {
   line-height: 1.4rem;
   color: #dbd9ff;
   text-align: right;
+}
+
+.popup {
+  width: 18rem;
+  height: 9.4rem;
+  position: absolute;
+  right: 4rem;
+  top: -4.7rem;
+}
+
+.main-popup {
+  width: 18rem;
+  height: 7.2rem;
+  background-color: #ffffff;
+  border-radius: 1rem 1rem 0rem 1rem;
+  padding: 1.6rem 2.4rem;
+}
+
+.bottom-stick {
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: #ffffff;
+  float: right;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.leftover {
+  color: #0c122c;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+}
+
+.units {
+  text-transform: uppercase;
+  color: rgb(12, 18, 44, 0.5);
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
+  float: right;
 }
