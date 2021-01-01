@@ -1,5 +1,4 @@
 html {
-  font-size: 10px;
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
 }
@@ -96,6 +95,7 @@ body {
   box-shadow: 0rem 7.5rem 10rem -3rem rgba(0, 0, 0, 0.24776);
   padding-top: 4rem;
   padding-left: 4rem;
+  padding-right: 4rem;
   margin-top: auto;
   margin-left: 3rem;
   position: relative;
@@ -117,18 +117,16 @@ body {
   background: rgb(12, 18, 44, 0.5);
   mix-blend-mode: normal;
   border-radius: 10rem;
-  width: 45.9rem;
   height: 2rem;
 }
 
 .usage-progress {
-  margin-top: 0.3rem;
-  margin-left: 0.3rem;
-  margin-bottom: 0.3rem;
+  margin: 0.3rem;
   background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
   border-radius: 0.8rem;
-  width: 33.9rem;
+  width: 81.5%;
   height: 1.4rem;
+  overflow: auto;
 }
 
 .pointer {
@@ -144,7 +142,6 @@ body {
 
 .markers {
   margin-top: 0.8rem;
-  width: 45.9rem;
   height: 1.4rem;
 }
 
@@ -166,7 +163,6 @@ body {
 
 .popup {
   width: 18rem;
-  height: 9.4rem;
   position: absolute;
   right: 4rem;
   top: -4.7rem;
@@ -206,4 +202,56 @@ body {
   letter-spacing: 0.1rem;
   line-height: 4rem;
   float: right;
+}
+
+@media (max-width: 90rem) {
+  .main {
+    flex-direction: column;
+  }
+
+  .usage-stat {
+    margin-left: 0;
+    margin-top: 1.6rem;
+    width: 32.6rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4.5rem;
+  }
+
+  .usage-bar {
+    overflow: initial;
+  }
+
+  body {
+    background-image: url("images/bg-mobile.png");
+    background-size: 100% 100%;
+  }
+
+  .bottom-stick {
+    display: none;
+  }
+
+  .main-popup {
+    border-radius: 1rem 1rem 1rem 1rem;
+  }
+
+  .popup {
+    position: initial;
+    order: 999;
+    width: 100%;
+    margin-top: 1.6rem;
+  }
+
+  .main-popup {
+    margin: 0 auto;
+  }
+
+  .control-panel {
+    width: 32.6rem;
+  }
+
+  .usage-text {
+    text-align: center;
+  }
 }
